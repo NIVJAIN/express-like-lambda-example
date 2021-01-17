@@ -1,30 +1,25 @@
 {
   "name": "express-like-lambda-example",
   "version": "1.0.0",
-  "description": "A dead simple Express-like Lambda hello world example",
+  "description": "![logo](./media/logo.jpg)",
   "main": "index.js",
+  "dependencies": {
+    "lambda-api": "^0.10.6"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "test",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm install --production && rm -rf build && mkdir build && zip -r -q -x='*media*' -x='*terraform*' -x=*coverage* -x='*.md' -x='LICENSE' -x='*build*' -x='*.DS_Store*' -x='*.git*' build/express-like-lambda-example.zip . && du -sh build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cujarrett/express-like-lambda-example.git"
+    "url": "git+https://github.com/NIVJAIN/express-like-lambda-example.git"
   },
-  "keywords": [
-    "Lambda",
-    "AWS",
-    "Express",
-    "API",
-    "REST"
-  ],
-  "author": "cujarrett",
-  "license": "MIT",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cujarrett/express-like-lambda-example/issues"
+    "url": "https://github.com/NIVJAIN/express-like-lambda-example/issues"
   },
-  "homepage": "https://github.com/cujarrett/express-like-lambda-example#readme",
-  "dependencies": {
-    "lambda-api": "~0.10.6"
-  }
+  "homepage": "https://github.com/NIVJAIN/express-like-lambda-example#readme"
 }
